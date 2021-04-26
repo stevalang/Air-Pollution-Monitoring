@@ -27,21 +27,10 @@ April 19, 2021
 
 ## <a name="overview">Project Outline</a> ##
 
-* What are you trying to do? 
+
 Predicting the air pollution level. 
-* Why?
+
 Highly pollution days are pretty important for all the people but extremely important for those who have asthma or trouble of breathing or are sensitive to particular matter in the air. Can Data Science and Machine Learning helps us predict what those pollution could be?
-* How is it done today, and what are the limits of current practice?
-* What is new in your approach and why do you think it will be successful?
-* Who cares? If you are successful, what difference will it make?
-* What are the risks?
-* How much will it cost?
-* How long will it take?
-* What are the mid-term and final “exams” to check for success?
-
-
-* Using ........
-* My results imply that in addition to
 
 
 ## <a name="motivation">Background & Motivation</a> ##
