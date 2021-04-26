@@ -20,6 +20,7 @@ April 19, 2021
 [LSTM Model](#lstm)<br/>
 [Models Results](#results)<br/>
 [Summary](#summary)<br/>
+[Tools Used](#tools)<br/>
 [Next Steps](#next)<br/>
 [References](#references)<br/>
 
@@ -131,6 +132,15 @@ My results imply the following:
 As air quality has been improved and there are still pollutants (Ozone, NO2, and PM2.5) retain at high AQI. Effort should continuously be made to reduce them. How can we make a difference? Drive less, use less electricity, don't burn wood or trash, support measures in your community that can cut air pollution, etc.
 
 Also air quality continues to worsen in cities across the world, especially in low-income countries and developing countries.  Cooperation should be setup among countries in combating air pollution.
+
+## <a name="tools">Tools Used</a> ##
+
+Python:
+Data Gathering: Pandas
+Data Analysis: Google Colab, Tensor Flow, Pandas, Scikit-Learn, NLTK
+
+Visualization:
+Data Visualization: Matplotlib
 
 ## <a name="next">Next Steps</a>
 Potential future directions include the following:
