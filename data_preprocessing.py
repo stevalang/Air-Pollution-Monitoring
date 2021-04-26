@@ -1,3 +1,9 @@
+'''
+@Author: Stefan Angelov
+@Created: 04/23/2021
+@Purpose: Predicting the air pollution
+'''
+
 import pandas as pd
 import numpy as np
 import os
@@ -73,8 +79,7 @@ def save_train_test_data(train_test_list, train_dir, test_dir):
         (each_train_test[0].reset_index()).to_csv(os.path.join(train_dir, 'train_'+filename+'.csv'), index = False)
         (each_train_test[1].reset_index()).to_csv(os.path.join(test_dir, 'test_'+filename+'.csv'), index = False)
 
-
-
+        
 
 if __name__ == '__main__':
     df = load_dataset()
@@ -95,6 +100,7 @@ if __name__ == '__main__':
 
     save_train_test_data(dtrain_test_list, dtrain_dir, dtest_dir)
     save_train_test_data(mtrain_test_list, mtrain_dir, mtest_dir)
+
 
 
 
