@@ -35,6 +35,7 @@ Highly pollution days are pretty important for all the people but extremely impo
 
 
 ## <a name="motivation">Background & Motivation</a> ##
+
 I have a background in Economics and Healthcare in particular sunlight therapy and selling air purifuing systems.
 My capstone project for the Galvanize Data Science Program was to build an early prediction model for air pollution.
 
