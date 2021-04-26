@@ -45,11 +45,10 @@ Highly pollution days are pretty important for all the people but extremely impo
 
 
 ## <a name="motivation">Background & Motivation</a> ##
-I have a background in Economics and Healthcare in particular sunlight therapy. 
+I have a background in Economics and Healthcare in particular sunlight therapy and selling air purifuing systems.
 My capstone project for the Galvanize Data Science Program was to build an early prediction model for air pollution.
 
-I am coming from one of the most air polluted capital in the world Sofia. Now I am living at the Bay and enjoying the fresh and clean ocean air ‘when there are no fires’. But I still take care of my friends and family. So I decided to create a system that can tell them few days in advanced what the air quality will be. Maybe taking a vacation and go to the mountain, or maybe stay at how those days and enjoy the clean air from the home air purifying system.
-
+I am coming from one of the most air polluted capital in the world Sofia. Now I am living at the Bay Area and enjoying the fresh and clean ocean air ‘when there are no fires’. But I still take care of my friends and family. So I decided to create a system that can tell them few days in advanced what the air quality will be. Maybe taking a vacation and go to the mountain, or maybe stay at how those days and enjoy the clean air from the home air purifying system.
 
 So my motivation for the project stems from the fact that air pollution is responsible for 4 million deaths per year according to the World Health Organization (WHO) and is a leading cause of death across the globe, and contributes to stroke, heart disease, lung cancer, and other respiratory illness.
 No wonder we should dedicate resources to understand and monitor air quality in our cities and neighborhoods. This should help authorities in urban planning as they can decide where to plant trees, build green spaces and manage traffic. Also, it can make us all aware of the impact of air pollution in our everyday life, which is critical to our health. 
@@ -117,12 +116,15 @@ From the begining I took one element that is extremely import most specifically 
 My data collection process involves first
 
 ## <a name="lstm">LSTM Model</a> ##
-Long Short-Term Memory Networks (LSTMs)
-Recurrent neural networks like the Long Short-Term Memory network or LSTM add the explicit handling of order between observations when learning a mapping function from inputs to outputs, not offered by MLPs or CNNs. They are a type of neural network that adds native support for input data comprised of sequences of observations.
-This capability of LSTMs has been used to great effect in complex natural language processing problems.
-The most relevant context of input observations to the expected output is learned and can change dynamically.
+
+<img src="imgs/lstm.png" width="900"/>
 
 This analysis has been carried out using univariate and multivariate techniques namely LSTM(long short term memory networks). To perform the experimental work, the dataset of Aotizhongxin has been considered.
+
+Recurrent neural networks like the Long Short-Term Memory network or LSTM is a special kind of recurrent neural network capable of learning short-term dependencies, and remembering information for long periods of time as its default behaviour.
+1. The Network forgets what to forget and what to remembe
+2. It selectively updates cell state values
+3. The network decides what part of current state gives output
 
 ## <a name="results">Models Results</a> ##
 My current methodology has been to build predictive models that use the air-quality dataset along with weather forecast because there is a correlation and to minimize the RMSE( root mean square error). That metric will tell me how effective my model is at producing a prediction that a detected air is actually high polluted.
