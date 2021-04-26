@@ -100,7 +100,7 @@ Therefore, in our data and visualiztion analysis, we will only be seeing the AQI
 
 EPA has divided AQI into six categories, which represent the level of air quality conditions. See Figure 2 below for the AQI ranges and corresponding air quality conditions.
 
-<img src="imgs/pollutants.jpg" width="510"/> <img src="imgs/stations.png" width="400"/>
+<img src="imgs/pollutants.jpg" width="410"/> <img src="imgs/stations.png" width="321"/>
 
 ## <a name="EDA">Exploratory Data Analysis</a> ##
 Conducted Exploratory Analysis and Visualization using Pandas and Seaborn on the Beijing PM2.5 Dataset
