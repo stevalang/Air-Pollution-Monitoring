@@ -112,7 +112,7 @@ My data collection process involves first:
 
 ## <a name="lstm">LSTM Model</a> ##
 
-My goal is to build a model to predict the PM2.5 concentration in a given day based on Ozone, PM (Particle pollution or particulate matter), CO (carbon monoxide), SO2 (sulfur dioxide), NO2 (nitrogen dioxide).
+My goal is to build a model to predict the PM2.5, PM10(Particle pollution or particulate matter), SO2, NO2(nitrogen dioxide), CO(carbon monoxide),O3(sulfur dioxide) concentration in a given day or month.
 So the model I’ve decided to build was LSTM which stands for long short term memory networks and it’s working extremely well to the time series data because instead of taking set period of time to train you model on, it’s getting constantly moving windows. 
 It training on the previous 365 day to forecast the next day and training on the prevous 12 months to forecast the next month.
 
@@ -151,20 +151,20 @@ LSTM one to one for PM2.5 daily base
 
 ### Daily RMSE
 
-Baseline Model on daily base
+Baseline Model
 
 <img src="imgs/daily_baseline.png" width="700"/>
 
-LSTM many to many on daily base
+LSTM many to many
 
 <img src="imgs/daily_lstm.png" width="700"/>
 
 ### Monthly RMSE
 
-Baseline Model on monthly base
+Baseline Model
 <img src="imgs/rmse_monthly_base.png" width="700"/>
 
-LSTM many to many on monthly base
+LSTM many to many
 
 <img src="imgs/rmse_monthly_lstm.png" width="700"/>
 
