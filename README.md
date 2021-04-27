@@ -56,12 +56,12 @@ Due to the major consequences of air pollution on human health, this problem is 
 ## <a name="solution">Solution</a> ##
 
 A lot of big data have been collected in the past few years. The problem is not of the amount of data we have but rather the methods we use to forecast pollution.
-The goal of this project is to explore the air quality of the Beijing suburbs.
 
 ## <a name="goals">Goals</a> ##
 
 Starting prototype on the Beijing air quality dataset but my ultimate goal is to apply the model on the air data quality for San Francisco.
 
+The goal of this project is to explore the air quality of the Beijing suburbs.
 ## <a name="data">Data</a> ##
 
 This Data set considers 6 main air pollutants and 6 relevant meteorological variables at multiple sites in Beijing.It covers the daily data between the years 2013 – 2017 for Beijing. Air quality data are collected at outdoor monitors across Beijing and can be download from UCI (UC Irvine Machine Learning Repository) web site https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
