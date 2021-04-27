@@ -30,20 +30,19 @@ April 19, 2021
 
 Predicting the air pollution level. 
 
-Highly pollution days are pretty important for all the people but extremely important for those who have asthma or trouble of breathing or are sensitive to particular matter in the air. Can Data Science and Machine Learning helps us predict what those pollution could be? I build RNN LSTM multivariate model for time series and successfully managed to predict two out of 6 main concentration in the air SO2 and O3 for a given month with RMSE 8.66 and 20.83 and not so good at daily base 13.81 and 43.60 respectivly.
+Highly pollution days are pretty important for all the people but extremely important for those who have asthma or trouble of breathing or are sensitive to particular matter in the air. Can Data Science and Machine Learning helps us predict what those pollution could be? I build an early prediction model for air pollution using RNN- LSTM univariate and multivariate models for time series and successfully managed to predict two out of 6 main concentration in the air SO2 and O3 for a given month with RMSE 8.66 and 20.83 and not so good at daily base 13.81 and 43.60 respectivly.
 
 
 ## <a name="motivation">Background & Motivation</a> ##
 
-I have a background in Economics and Healthcare in particular sunlight therapy and selling air purifying systems.
-My capstone project for the Galvanize Data Science Program was to build an early prediction model for air pollution.
+I have a background in Economics and Healthcare in particular sunlight therapy and air purifying systems.
 
-I am coming from one of the most air-polluted capital in the world Sofia. Now I am living in the Bay Area and enjoying the fresh and clean ocean air ‘when there are no fires’. But I still take care of my friends and family. So I decided to create a system that can tell them few days in advance what the air quality will be. Maybe taking a vacation and go to the mountain, or maybe stay at how those days and enjoy the clean air from the home air purifying system.
+I am coming from one of the most air-polluted capital in the world Sofia. Now I am living in the Bay Area and enjoying the fresh and clean ocean air - when there are no fires. But I still take care of my friends and family. So I decided to create a system that can tell them few days in advance what the air quality will be. Maybe taking a vacation and go to the mountain, or maybe stay at how those days and enjoy the clean air from the home air purifying system.
 
 So my motivation for the project stems from the fact that air pollution is responsible for 4 million deaths per year according to the World Health Organization (WHO) and is a leading cause of death across the globe, and contributes to stroke, heart disease, lung cancer, and other respiratory illness.
 No wonder we should dedicate resources to understand and monitor air quality in our cities and neighborhoods. This should help authorities in urban planning as they can decide where to plant trees, build green spaces and manage traffic. Also, it can make us all aware of the impact of air pollution in our everyday life, which is critical to our health. 
 
-California ever since 2018 they have been played wildfires, people evacuated.I remember last year was my second year living in the Bay Area and for the first time I have to experience the wildfires and this amount of toxic air. I have been waiting 3-4 days to air go better but this never happened so I decided to go to Utah for two weeks until the situation gets better. If I knew in advance the quality of the air, I’ve might go earlier and prevent be exposed to pollution for those 4 days.
+California ever since 2018 they have been played wildfires, people evacuated.I remember last year was my second year living in the Bay Area and for the first time I had to experience the wildfires and this amount of toxic air. I have been waiting 3-4 days the air go better but this never happened so I decided to go to Utah for two weeks until the situation got better. If I knew in advance the quality of the air, I’ve might go earlier and prevent be exposed to pollution for those 4 days.
 
 ## <a name="problem">Problem</a> ##
 
@@ -55,8 +54,6 @@ Due to the major consequences of air pollution on human health, this problem is 
 
 
 ## <a name="solution">Solution</a> ##
-
-In this project, I approach air pollution from a different angle. I want to introduce and discuss the concept of crowdsourcing air quality monitoring. For those unfamiliar with the concept of crowdsourcing, it is about engaging the public to achieve a common goal. We can achieve this by dividing the work among participants into small tasks; in this case, collect air quality measurements. I aim to use crowdsourcing in a smart way to build up an accurate air pollution heat-map with the use of Artificial Intelligence (AI).
 
 A lot of big data have been collected in the past few years. The problem is not of the amount of data we have but rather the methods we use to forecast pollution.
 The goal of this project is to explore the air quality of the Beijing suburbs.
