@@ -134,9 +134,6 @@ Monthly one to one LSTM only for PM2.5
 <img src="imgs/monthly2.png" width="900"/>
 
 
-
-
-
 ## <a name="results">Models Results</a> ##
 
 Baseline Model for PM2.5 daily base
@@ -157,16 +154,11 @@ LSTM many to many on daily base
 
 My current methodology has been to build predictive models that use the air-quality dataset to minimize the RMSE(root mean square error). That metric will tell me how effective my model is at producing a prediction that a detected air is highly polluted.
 
-I found the most effective the LSTM
-So here is a close overlook of 
-
 I've got this results for monthly predicting. For PM10, NO2, SO2, O3 it predicts very well, but for  PM2.5, CO it doesn't. 
 It seems to predict very well when there is a clear seasonal pattern, if we look at SO2 there is a clear peak once a year and it seems to go slightly less each year. It’s start’s big 2014 and it’s less 2015 and the model is capturing that very well. The same is with O3 is predicting the seasonal trend. But is struggling with data and interestingly enough the CO prediction looks like they should be correct, there is a little bit of a pick at 2014 and 205 and an even bigger pick in 2016 so predicted an even bigger pick in 2017 but it wasn’t. So I’ve read a little bit if China changed some regulation for CO emissions and it ends up that According to the US Energy Information Administration, China is ramping up its use of natural gas. Compared to coal, natural gas emits 50 to 60 percent less carbon during the combustion process. The predicting accurately got the trend of the increasing spikes. The model seems to make a sensible prediction based on the previous data. 
 
 
 ## <a name="summary">Summary</a> ##
-My results imply the following:
-1. Generally my models predict
 
 This analysis has been carried out using univariate( one to one) and multivariate( many to many) techniques namely LSTM(long short term memory networks). To perform the experimental work, the dataset of Aotizhongxin has been considered because all the stations looked pretty similar to mine, the same pattern is repeating. 
 
