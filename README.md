@@ -118,18 +118,21 @@ It training on the previous 365 day to forecast the next day and training on the
 
 The measure of success of this kind of model is RMSE Root mean squared error which we want ot be as small as possible because it measure the variance between what you predict and how the model actually performs.
 
-* Many to Many LSTM for PM2.5 on a daily base
+* Daily base LSTM one to one model for PM2.5
+<img src="imgs/daily.png" width="900"/>
 
-Daily
+* Daily base LSTM many to many model
+
+
 <img src="imgs/daily_1.png" width="900"/>
 <img src="imgs/daily_2.png" width="900"/>
 
 
-Monthly one to one LSTM only for PM2.5
+* Monthly base LSTM one to one only for PM2.5
 
 <img src="imgs/monthly.png" width="900"/>
 
-* Monthly many to many LSTM for PM2.5, PM10, SO2, NO2, CO,O3
+* Monthly base LSTM many to many for PM2.5, PM10, SO2, NO2, CO,O3
 <img src="imgs/monthly1.png" width="900"/>
 <img src="imgs/monthly2.png" width="900"/>
 
