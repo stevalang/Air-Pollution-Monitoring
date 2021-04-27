@@ -147,6 +147,7 @@ LSTM one to one for PM2.5 daily base
 
 <img src="imgs/lstm_pm25.png" width="700"/>
 
+
 Baseline Model on daily base
 
 <img src="imgs/daily_baseline.png" width="700"/>
@@ -154,6 +155,17 @@ Baseline Model on daily base
 LSTM many to many on daily base
 
 <img src="imgs/daily_lstm.png" width="700"/>
+
+
+Baseline Model on monthly base
+
+<img src="imgs/rmse_monthly_base.png" width="700"/>
+
+LSTM many to many on monthly base
+
+<img src="imgs/rmse_monthly_lstm.png" width="700"/>
+
+
 
 My current methodology has been to build predictive models that use the air-quality dataset to minimize the RMSE(root mean square error). That metric will tell me how effective my model is at producing a prediction that a detected air is highly polluted.
 
