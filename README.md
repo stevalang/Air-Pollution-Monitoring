@@ -91,20 +91,32 @@ This is a dataset that reports on the weather and the level of pollution each ho
 From the beginning, I took one element that extremely important most specifically PM2.5 pollution (particulars matter 2.5 microns or less) while ignoring some of the others then use only one ML model(LSTM one to one).
 
 
-
 <img src="imgs/pm10.png" width="1200"/>
 <img src="imgs/o3.png" width="1200"/>
 <img src="imgs/co.png" width="1200"/>
 <img src="imgs/so2.png" width="1100"/>
 
-
+Because all the stations looked pretty similar to me, there is the same pattern going on, I just decided to predict the air pollution for only one station and the model can be easy applied to the others.
 
 
 ## <a name="data_preparation">Data Preparation</a> ##
 
-My data collection process involves first
+My data collection process involves first:
+
+* After cleaning and itterpolating the data I resample it into daily by taking average of hours and monthly by taking monthly average of maximum values in a day.
+
+* I broke the data into ¾ train test split, which means that the first 3 years are for train and the last one year for testing the model and see how it performed
+
+* Shifted baseline to train from previous values
+
 
 ## <a name="lstm">LSTM Model</a> ##
+
+My goal is to build a model to predict the PM2.5 concentration in a given day based on Ozone, PM (Particle pollution or particulate matter), CO (carbon monoxide), SO2 (sulfur dioxide), NO2 (nitrogen dioxide).
+So the model I’ve decided to build was LSTM which stands for long short term memory networks and it’s working extremely well to the time series data because instead of taking set period of time to train you model on, it’s getting constantly moving windows. 
+It training on the previous 365 day to forecast the next day and training on the prevous 12 months to forecast the next month.
+
+The measure of success of this kind of model is RMSE Root mean squared error which we want ot be as small as possible because it measure the variance between what you predict and how the model actually performs.
 
 * Many to Many LSTM for PM2.5 on a daily base
 
@@ -122,9 +134,7 @@ Monthly one to one LSTM only for PM2.5
 <img src="imgs/monthly2.png" width="900"/>
 
 
-This analysis has been carried out using univariate( one to one) and multivariate( many to many) techniques namely LSTM(long short term memory networks). To perform the experimental work, the dataset of Aotizhongxin has been considered because all the stations looked pretty similar to mine, the same pattern is repeating. 
 
-Recurrent neural networks like the Long Short-Term Memory network or LSTM is a special kind of recurrent neural network capable of learning short-term dependencies and remembering information for long periods as its default behavior. I first conducted an LSTM one-to-one model for PM2.5 and after that many to many with 6 of the features.
 
 
 ## <a name="results">Models Results</a> ##
@@ -150,22 +160,17 @@ My current methodology has been to build predictive models that use the air-qual
 I found the most effective the LSTM
 So here is a close overlook of 
 
-I’ve got this model is predicting one hour. This is what it looks like on years with test data. For this NO2, CO, it predicts very well, but for these particular ones, it does. 
-It seems to predict very well when there is a clear seasonal pattern, if we look at SO2 there is a clear peak once a year and it seems to go slightly less each year. It’s start’s big 2014 and it’s less 2015 and the model is capturing that very well. The same is with O3 is predicting the seasonal trend. But is struggling with data… and interestingly enough the CO prediction looks like they should be correct, there is a little bit of a pick at 2014 and 205 and an even bigger pick in 2016 so predicted an even bigger pick in 2017 but it wasn’t. So I’ve read a little bit if China changed some regulation for CO emissions and it ends up that According to the US Energy Information Administration, China is ramping up its use of natural gas. Compared to coal, natural gas emits 50 to 60 percent less carbon during the combustion process. The predicting accurately got the trend of the increasing spikes. The model seems to make a sensible prediction based on the previous data. 
-
-As you can see at the graph PM2.5 and PM10 
-The model predicts some of the pollutions in the airway better than the others.
-
-It’s doing very good on O3, we can see there is a clear seasonal pattern and predicts it well
-It’s relatively good at CO and over-predicted it a little bit.
-
-These are the once that I’ve predicted the best
+I've got this results for monthly predicting. For PM10, NO2, SO2, O3 it predicts very well, but for  PM2.5, CO it doesn't. 
+It seems to predict very well when there is a clear seasonal pattern, if we look at SO2 there is a clear peak once a year and it seems to go slightly less each year. It’s start’s big 2014 and it’s less 2015 and the model is capturing that very well. The same is with O3 is predicting the seasonal trend. But is struggling with data and interestingly enough the CO prediction looks like they should be correct, there is a little bit of a pick at 2014 and 205 and an even bigger pick in 2016 so predicted an even bigger pick in 2017 but it wasn’t. So I’ve read a little bit if China changed some regulation for CO emissions and it ends up that According to the US Energy Information Administration, China is ramping up its use of natural gas. Compared to coal, natural gas emits 50 to 60 percent less carbon during the combustion process. The predicting accurately got the trend of the increasing spikes. The model seems to make a sensible prediction based on the previous data. 
 
 
 ## <a name="summary">Summary</a> ##
 My results imply the following:
 1. Generally my models predict
 
+This analysis has been carried out using univariate( one to one) and multivariate( many to many) techniques namely LSTM(long short term memory networks). To perform the experimental work, the dataset of Aotizhongxin has been considered because all the stations looked pretty similar to mine, the same pattern is repeating. 
+
+Recurrent neural networks like the Long Short-Term Memory network or LSTM is a special kind of recurrent neural network capable of learning short-term dependencies and remembering information for long periods as its default behavior. I first conducted an LSTM one-to-one model for PM2.5 and after that many to many with 6 of the features.
 
 As air quality has been improved and there are still pollutants (ozone, NO2, and PM2.5) retain at high AQI. Efforts should continuously be made to reduce them. How can we make a difference? Drive less, use less electricity, don't burn wood or trash, support measures in your community that can cut air pollution, etc.
 
