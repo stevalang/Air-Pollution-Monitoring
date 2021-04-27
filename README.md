@@ -157,6 +157,7 @@ LSTM many to many
 ### Monthly RMSE
 
 Baseline Model
+
 <img src="imgs/rmse_monthly_base.png" width="700"/>
 
 LSTM many to many
