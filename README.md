@@ -59,12 +59,12 @@ A lot of big data have been collected in the past few years. The problem is not 
 
 ## <a name="goals">Goals</a> ##
 
-Starting prototype on the Beijing air quality dataset but my ultimate goal is to apply the model on the air data quality for San Francisco.
+The goal of this project is to explore the air quality of the Beijing suburbs dataset and build a prototype model. My final goal is to apply the model on the air quality dataset for San Francisco.
 
-The goal of this project is to explore the air quality of the Beijing suburbs.
+
 ## <a name="data">Data</a> ##
 
-This Data set considers 6 main air pollutants and 6 relevant meteorological variables at multiple sites in Beijing.It covers the daily data between the years 2013 – 2017 for Beijing. Air quality data are collected at outdoor monitors across Beijing and can be download from UCI (UC Irvine Machine Learning Repository) web site https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
+This Data set considers 6 main air pollutants and 6 relevant meteorological variables at multiple sites in Beijing. It covers the daily data between the years 2013 – 2017 for Beijing. Air quality data are collected at outdoor monitors across Beijing and can be download from UCI (UC Irvine Machine Learning Repository) web site https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 
 O3 (Ozone)
 
@@ -83,10 +83,8 @@ NO2 (nitrogen dioxide)
 Conducted Exploratory Analysis and Visualization using Pandas and Seaborn on the Beijing PM2.5 Dataset
 Scaled, encoded, and converted the Time Series data into Supervised Learning data to feed the LSTM network
 Evaluated by combining the forecast with the test dataset, inverting the scaling, and achieving a test RMSE of 49.60 compare to the based model of 50.12.
+
 This is a dataset that reports on the weather and the level of pollution each hour for five years at the US embassy in Beijing, China.
-
-From the beginning, I took one element that extremely important most - PM2.5 pollution (particulars matter 2.5 microns or less) while ignoring some of the others then use only one ML model(LSTM one to one).
-
 
 <img src="imgs/pm10.png" width="1200"/>
 <img src="imgs/o3.png" width="1200"/>
@@ -109,9 +107,9 @@ My data collection process involves:
 
 ## <a name="lstm">LSTM Model</a> ##
 
-My goal is to build a model to predict the PM2.5, PM10(Particle pollution or particulate matter), SO2, NO2(nitrogen dioxide), CO(carbon monoxide),O3(sulfur dioxide) concentration in a given day or month.
+My goal is to build a model to predict the PM2.5 and PM10(Particle pollution or particulate matter), SO2, NO2(nitrogen dioxide), CO(carbon monoxide),O3(sulfur dioxide) concentration in a given day or month.
 So the model I’ve decided to build was LSTM which stands for long short term memory networks and it’s working extremely well to the time series data because instead of taking set period of time to train you model on, it’s getting constantly moving windows. 
-It training on the previous 365 day to forecast the next day and training on the prevous 12 months to forecast the next month.
+It training on the previous 365 day to forecast the next day and training on the previous 12 months to forecast the next month.
 
 The measure of success of this kind of model is RMSE Root mean squared error which we want ot be as small as possible because it measure the variance between what you predict and how the model actually performs.
 
