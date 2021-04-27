@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 data
 dataset
+result
 .Python
 build/
 develop-eggs/
