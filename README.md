@@ -15,7 +15,7 @@ April 19, 2021
 [Goals](#problem)<br/>
 [Data](#solution)<br/>
 [Exploratory Data Analysis](#EDA)<br/>
-[Data_Preparation](#data_preparation)<br/>
+[Data Preparation](#data_preparation)<br/>
 [LSTM Model](#lstm)<br/>
 [Models Results](#results)<br/>
 [Summary](#summary)<br/>
@@ -30,7 +30,7 @@ April 19, 2021
 
 Predicting the air pollution level. 
 
-Highly pollution days are pretty important for all the people but extremely important for those who have asthma or trouble of breathing or are sensitive to particular matter in the air. Can Data Science and Machine Learning helps us predict what those pollution could be?
+Highly pollution days are pretty important for all the people but extremely important for those who have asthma or trouble of breathing or are sensitive to particular matter in the air. Can Data Science and Machine Learning helps us predict what those pollution could be? I build RNN LSTM multivariate model for time series and successfully managed to predict two out of 6 main concentration in the air SO2 and O3 for a given month with RMSE 8.66 and 20.83 and not so good at daily base 13.81 and 43.60 respectivly.
 
 
 ## <a name="motivation">Background & Motivation</a> ##
