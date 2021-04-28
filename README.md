@@ -182,7 +182,7 @@ As air quality has been improved and there are still pollutants (ozone, NO2, and
 
 Python:
 Data Gathering: Pandas
-Data Analysis: Google Colab, Tensor Flow, Pandas, Scikit-Learn, NLTK
+Data Analysis:Tensor Flow, Pandas, Numpy Scikit-Learn
 
 Visualization:
 Data Visualization: Matplotlib
