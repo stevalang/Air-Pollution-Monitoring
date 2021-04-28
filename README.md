@@ -82,7 +82,7 @@ NO2 (nitrogen dioxide)
 
 Conducted Exploratory Analysis and Visualization using Pandas and Seaborn on the Beijing dataset.
 Scaled, encoded, and converted the Time Series data into Supervised Learning data to feed the LSTM network
-Evaluated by combining the forecast with the test dataset, inverting the scaling, and achieving a test RMSE of 49.60 compare to the based model of 50.12.
+Evaluated by combining the forecast with the test dataset, inverting the scaling, and achieving a test RMSE of 49.60 compare to the based model of 50.12 for PM2.5.
 
 This is a dataset that reports on the weather and the level of pollution each hour for five years at the US embassy in Beijing, China.
 
